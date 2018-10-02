@@ -6,11 +6,26 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest --watch",
+    "precommit": "pretty-quick --staged"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": []
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "expo": "^30.0.1",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "jest-expo": "^30.0.0",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0",
+    "react-test-renderer": "^16.5.2"
   }
 }
