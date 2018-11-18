@@ -1,9 +1,9 @@
 const express = require("express");
-const plaid = require("./plaid");
+const plaid = require("./api/plaid");
 
 const router = express.Router();
 
-router.route("/exchangePublicToken").get(plaid.exchangePublicToken);
-router.route("/getAccounts").get(plaid.getAccounts);
+router.route("/api/exchangePublicToken").get(plaid.exchangePublicToken);
+router.route("/api/getAccounts").get(plaid.getAccounts);
 
 module.exports = router;

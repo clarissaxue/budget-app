@@ -16,16 +16,17 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "expo": "^30.0.1",
-    "react": "16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+    "expo": "^31.0.5",
+    "react": "^16.6.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^2.7.0",
-    "jest-expo": "^30.0.0",
-    "prettier": "^1.14.3",
-    "pretty-quick": "^1.7.0",
-    "react-test-renderer": "^16.5.2"
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest-expo": "^31.0.0",
+    "prettier": "^1.15.2",
+    "pretty-quick": "^1.8.0",
+    "react-test-renderer": "^16.6.3",
+    "schedule": "^0.4.0"
   }
 }

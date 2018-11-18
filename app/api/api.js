@@ -1,22 +1,35 @@
 import axios from "axios";
 const uri = "http://localhost:3000";
 
-const exchangePublicToken = publicToken => {
-  let url =
-    uri + "/exchangeAccessToken?publicToken=" + encodeURIComponent(publicToken);
-  return axios.get(url).then(response => {
-    console.log(response.data);
-  });
+const getAccessToken = publicToken => {
+  const url =
+    uri +
+    "/api/exchangePublicToken?publicToken=" +
+    encodeURIComponent(publicToken);
+  return axios
+    .get(url)
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(err => {
+      console.error(error);
+    });
 };
 
 const getAccounts = accessToken => {
-  let url = uri + "/getAccounts?accessToken=" + encodeURIComponent(accessToken);
-  return axios.get(url).then(response => {
-    console.log(response.data);
-  });
+  const url =
+    uri + "/api/getAccounts?accessToken=" + encodeURIComponent(accessToken);
+  return axios
+    .get(url)
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(err => {
+      console.error(error);
+    });
 };
 
 module.exports = {
-  exchangePublicToken,
+  getAccessToken,
   getAccounts
 };

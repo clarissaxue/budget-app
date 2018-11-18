@@ -10,7 +10,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
 //Use router middleware to connect different api route calls
-app.use("/api", router);
+app.use("/", router);
 
 //Listens to given port
 app.listen(PORT, () => {

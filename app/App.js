@@ -34,7 +34,7 @@ export default class App extends Component {
 
   renderDetails() {
     if (this.state.data.metadata.public_token) {
-      api.exchangePublicToken(this.state.data.metadata.public_token);
+      api.getAccessToken(this.state.data.metadata.public_token);
     }
     return (
       <View style={styles.container}>
